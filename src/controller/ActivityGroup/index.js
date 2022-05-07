@@ -156,8 +156,8 @@ module.exports = {
 
                 await activityGroup.update(
                     {
-                        title: req?.body?.title,
-                        email: req?.body?.email,
+                        title: req.body.title,
+                        email: req.body.email,
                         updated_at : current
                     },
                     {
