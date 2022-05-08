@@ -9,7 +9,8 @@
     "seed": "npx sequelize-cli db:seed all",
     "debug": "nodemon --inspect ./config/server.js",
     "migrate": "npx sequelize-cli db:migrate",
-    "down": "npx sequelize-cli db:migrate:undo"
+    "down": "npx sequelize-cli db:migrate:undo",
+    "startdev": "concurrently \"npm start\" \"npm run migrate\" "
   },
   "keywords": [
     "node",
@@ -34,6 +35,7 @@
     "sequelize": "^6.6.5"
   },
   "devDependencies": {
-    "sequelize-cli": "^6.2.0"
+    "concurrently": "^7.1.0",
+    "sequelize-cli": "^6.4.1"
   }
 }

@@ -4,7 +4,7 @@ const Controller = require("../controller/indexController");
 const router = express.Router();
 
 // todo-items
-router.get("/",(req,res) => res.send("Respon node js berhasil"))
+router.get("/",(req,res) => res.send("Respon node js testing"))
 router.get("/todo-items", Controller.Todolist.getTodoList)
 router.get("/todo-items/:id", Controller.Todolist.getSpesificTodoList)
 router.post("/todo-items", Controller.Todolist.saveTodoList)
